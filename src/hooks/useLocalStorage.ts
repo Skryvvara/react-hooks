@@ -17,9 +17,11 @@ export function useLocalStorage<T>(
 
     try {
       const item = window.localStorage.getItem(key);
+      if (!item) window.localStorage.setItem(key, JSON.stringify(initialValue));
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
       console.error(error);
+      window.localStorage.setItem(key, JSON.stringify(initialValue));
       return initialValue;
     }
   });
@@ -35,9 +37,10 @@ export function useLocalStorage<T>(
       try {
         const valueToStore =
           value instanceof Function ? value(storedValue) : value;
+        const stringifiedValue = JSON.stringify(valueToStore);
         setStoredValue(valueToStore);
         if (typeof window !== 'undefined') {
-          window.localStorage.setItem(key, JSON.stringify(valueToStore));
+          window.localStorage.setItem(key, stringifiedValue);
         }
       } catch (error) {
         console.error(error);
