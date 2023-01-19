@@ -3946,11 +3946,6 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-window-resizeto@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/window-resizeto/-/window-resizeto-0.0.2.tgz#94db61ea93e0bfc4292fd82c3e98b24776637bc5"
-  integrity sha512-681jdLyc6p+Whk7lFxWISm+V49ymURtBN+Oz5j5c6UnYoBpqc2Q8e3pjZ5VtedC01TjJqr2Xt9XdJMid4KxZmQ==
-
 word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
