@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/skryvvara"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Collection of useful custom react hooks",
   "repository": "https://github.com/Skryvvara/react-hooks",
   "author": "Skryvvara",
@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest ."
+    "test": "jest .",
+    "test-dev":"jest . --verbose --coverage --watch"
   },
   "license": "MIT",
   "private": false,
