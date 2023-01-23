@@ -47,7 +47,6 @@ describe('useDebounce', () => {
     const count = screen.getByTestId('count');
     const deb = screen.getByTestId('deb');
 
-    console.log(count.textContent, deb.textContent);
     expect(deb.textContent).not.toEqual(count.textContent);
   });
 });
