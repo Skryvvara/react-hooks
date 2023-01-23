@@ -38,6 +38,7 @@ function TestComponent(props: Props) {
 }
 
 describe('useLocalStorage', () => {
+  // console.error is disabled for this suite because errors are expected and triggered with force to test hook behaviour
   beforeEach(() => {
     jest.spyOn(console, 'error').mockImplementation(() => {});
   });
